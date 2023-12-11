@@ -55,7 +55,7 @@ From these initial models, the accuracy of the decision tree and the logistic re
 
 The decision tree model for the balanced data again suggested that Time of Day is the most important feature, but it still wasn't able to reduce the impurity.  We retried the logistic regression model using Time of Day as the x variable and this time the accuracy in predicting the damage level rose from 49.8% with the dummy model to 53.1%.
 
-We continued to run other linear regression models, first adding only the Sex variable to Time of Day, then including all of our numeric variables, and finally including all of the columns in our cleaned dataset.  None of these produced accuracy levels that improved our predictive ability much.
+We continued to run other logistic regression models, first adding only the Sex variable to Time of Day, then including all of our numeric variables, and finally including all of the columns in our cleaned dataset.  None of these produced accuracy levels that improved our predictive ability much.
 
 Based on our business problem, we cannot say with a great amount of accuracy whether a crash will be above \$1500 in damage using only this data.  However, we can see that the variable that most influences that outcome is the time of day of an accident.  When we simply look at when the crash takes place and whether or not the damage is estimated to cost more than $1500, we can see that accidents in the evening and overnight are about 8% more likely to cause damage over \$1500, compared to other times of day.
 
